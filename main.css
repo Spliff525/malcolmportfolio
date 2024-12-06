@@ -261,11 +261,13 @@ body,
 .profile__tags {
   font-size: 0.7rem;
   margin-bottom: 1rem 0;
+
+
 }
 .profile__tags span {
   background: rgb(34, 34, 79);
 
-  padding: 4px, 10px;
+  padding: 20px, 10px;
   margin: 4px;
   border-radius: 15px;
 }
@@ -452,6 +454,8 @@ font-weight: 400;
 
 
 
+
+
 .gsap-service-item-1 {
   background: #14b8a6;
 }
@@ -594,7 +598,7 @@ font-weight: 400;
 
 
 
-  @media(max-width:100px){
+  @media(max-width:1000px){
 .__content-wrap{
     padding:4rem 2rem;
 
@@ -625,6 +629,7 @@ font-size: 1.5rem;
 
 .hero{
     padding-top:0;
+    max-height: 700px;
 }
 
 .nav{
@@ -647,6 +652,7 @@ margin-top:0;
 .hero__content{
 
     display: flex;
+    flex-direction: column; ;
     justify-content: center;
     flex:none;
 }
@@ -661,8 +667,11 @@ margin-top:0;
 
 .hero__illustration__img{
 
-    max-height: 400px;
-    width:70%;
+   max-height: 400px;
+    width:70%
+
+
+
 }
 
 
@@ -740,9 +749,10 @@ align-items:start;
     left:-45.5px;
 }
 
-.resume__illustration img{
 
-    max-width:400px;
+
+.resume__illustration img{
+display: none;
 }
 
 
@@ -764,10 +774,20 @@ align-items:start;
     padding-left:15px;
 }
 
+.service__icon-wrapper{
+  display: none;
+}
+
+.front{
+  display: none;
+}
+
 /*Responsive Technology */
 
 
 .tech__items-container{
+display: flex;
+  
 gap:1.5rem;
 
 
@@ -776,10 +796,19 @@ gap:1.5rem;
 
 .tech__item{
 border-radius: 1rem;
-flex:0 0 87px;
-height: 87px
+flex:0 0 100px;
+height: 100px;
+position: relative;
+padding-bottom: 1rem;
 
 }
+
+.tech__item__text{
+
+position: absolute;
+bottom:-2px;
+}
+
 
 .tech__item__img{
 height:35px;
@@ -796,6 +825,9 @@ height:35px;
 
 }
 
+.contact{
+  max-height: 576px;
+}
 
 
 .footer-nav__items{
